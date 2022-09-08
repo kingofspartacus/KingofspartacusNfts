@@ -1,0 +1,27 @@
+{
+  "name": "KingofspartacusNfts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "merge": "node node_modules/truffle-flattener ./contracts/KingOfSpartacusNFTs.sol > KingOfSpartacusNFTs-merge.sol"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingofspartacus/KingofspartacusNfts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kingofspartacus/KingofspartacusNfts/issues"
+  },
+  "homepage": "https://github.com/kingofspartacus/KingofspartacusNfts#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "truffle-flattener": "^1.6.0"
+  }
+}
