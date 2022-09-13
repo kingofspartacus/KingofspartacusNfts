@@ -1,0 +1,16 @@
+{
+  "name": "Ekko",
+  "description": "Genesis card",
+  "image_url": "https://github.com/kingofspartacus/KingofspartacusNfts/raw/master/cards/9.png",
+  "attributes": [
+      {
+        "trait_type": "class", 
+        "value": "genesis"
+      }, 
+      {
+          "display_type": "date", 
+          "trait_type": "birthday", 
+          "value": 1624955102
+      }        
+    ]
+}
