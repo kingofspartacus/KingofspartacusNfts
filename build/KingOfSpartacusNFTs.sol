@@ -1,10 +1,9 @@
-// File: @openzeppelin/contracts/utils/introspection/IERC165.sol
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.16;
+
 
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts v4.4.1 (utils/introspection/IERC165.sol)
-
-pragma solidity ^0.8.0;
-
 /**
  * @dev Interface of the ERC165 standard, as defined in the
  * https://eips.ethereum.org/EIPS/eip-165[EIP].
@@ -26,13 +25,8 @@ interface IERC165 {
     function supportsInterface(bytes4 interfaceId) external view returns (bool);
 }
 
-// File: @openzeppelin/contracts/token/ERC721/IERC721.sol
-
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.7.0) (token/ERC721/IERC721.sol)
-
-pragma solidity ^0.8.0;
-
 /**
  * @dev Required interface of an ERC721 compliant contract.
  */
@@ -170,13 +164,8 @@ interface IERC721 is IERC165 {
     function isApprovedForAll(address owner, address operator) external view returns (bool);
 }
 
-// File: @openzeppelin/contracts/token/ERC721/IERC721Receiver.sol
-
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.6.0) (token/ERC721/IERC721Receiver.sol)
-
-pragma solidity ^0.8.0;
-
 /**
  * @title ERC721 token receiver interface
  * @dev Interface for any contract that wants to support safeTransfers
@@ -200,13 +189,8 @@ interface IERC721Receiver {
     ) external returns (bytes4);
 }
 
-// File: @openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol
-
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts v4.4.1 (token/ERC721/extensions/IERC721Metadata.sol)
-
-pragma solidity ^0.8.0;
-
 /**
  * @title ERC-721 Non-Fungible Token Standard, optional metadata extension
  * @dev See https://eips.ethereum.org/EIPS/eip-721
@@ -228,13 +212,8 @@ interface IERC721Metadata is IERC721 {
     function tokenURI(uint256 tokenId) external view returns (string memory);
 }
 
-// File: @openzeppelin/contracts/utils/Address.sol
-
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.7.0) (utils/Address.sol)
-
-pragma solidity ^0.8.1;
-
 /**
  * @dev Collection of functions related to the address type
  */
@@ -453,13 +432,8 @@ library Address {
     }
 }
 
-// File: @openzeppelin/contracts/utils/Context.sol
-
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts v4.4.1 (utils/Context.sol)
-
-pragma solidity ^0.8.0;
-
 /**
  * @dev Provides information about the current execution context, including the
  * sender of the transaction and its data. While these are generally available
@@ -480,13 +454,8 @@ abstract contract Context {
     }
 }
 
-// File: @openzeppelin/contracts/utils/Strings.sol
-
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.7.0) (utils/Strings.sol)
-
-pragma solidity ^0.8.0;
-
 /**
  * @dev String operations.
  */
@@ -558,13 +527,8 @@ library Strings {
     }
 }
 
-// File: @openzeppelin/contracts/utils/introspection/ERC165.sol
-
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts v4.4.1 (utils/introspection/ERC165.sol)
-
-pragma solidity ^0.8.0;
-
 /**
  * @dev Implementation of the {IERC165} interface.
  *
@@ -588,19 +552,8 @@ abstract contract ERC165 is IERC165 {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC721/ERC721.sol
-
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.7.0) (token/ERC721/ERC721.sol)
-
-pragma solidity ^0.8.0;
-
-
-
-
-
-
-
 /**
  * @dev Implementation of https://eips.ethereum.org/EIPS/eip-721[ERC721] Non-Fungible Token Standard, including
  * the Metadata extension, but not including the Enumerable extension, which is available separately as
@@ -1043,21 +996,15 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
     ) internal virtual {}
 }
 
-// File: contracts/KingOfSpartacusNFTs.sol
-
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.16;
-
-
 contract KingOfSpartacusNFTs is ERC721 {
     using Strings for uint256;
     string public baseURI = "https://raw.githubusercontent.com/kingofspartacus/KingofspartacusNfts/master/cards/";
 
-    constructor() ERC721("KingOfSpartacus NFTs", "KingOfSpartacus") {
+    constructor() ERC721("KingOfSpartacus NFTs", "NFTD") {
 
     }
 
-    // https://raw.githubusercontent.com/kingofspartacus/KingofspartacusNfts/master/cards/1.json
     function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
         require(_exists(tokenId), "ERC721Metadata: URI query for nonexistent token");
 

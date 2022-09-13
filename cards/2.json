@@ -1,0 +1,16 @@
+{
+  "name": "Phuc Phich v1",
+  "description": "Genesis card",
+  "image_url": "https://github.com/kingofspartacus/KingofspartacusNfts/raw/master/cards/2.jpg",
+  "attributes": [
+      {
+        "trait_type": "class", 
+        "value": "genesis"
+      }, 
+      {
+          "display_type": "date", 
+          "trait_type": "birthday", 
+          "value": 1624955102
+      }        
+    ]
+}
