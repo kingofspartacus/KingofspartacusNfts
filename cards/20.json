@@ -1,0 +1,89 @@
+{
+  "name": "Cats smoking snake black",
+  "description": "Cats smoking Cats smoking Cats smoking Cats smoking Cats smoking Cats smoking Cats smoking Cats smoking Cats smoking Cats smoking Cats smoking Cats smoking Cats smoking",
+  "image_url": "https://github.com/kingofspartacus/KingofspartacusNfts/raw/master/cards/20.png",
+  "youtube_url": "https://www.youtube.com/watch?v=EAV6J6hE9rk",
+  "properties": {
+    "base": "starfish",
+    "rich_property": {
+      "name": "eyes",
+      "value": "big",
+      "display_value": "Big"
+    },
+    "name": {
+      "type": "string",
+      "description": "Identifies the asset to which this token represents"
+    },
+    "decimals": {
+      "type": "integer",
+      "description": "The number of decimal places that the token amount should display - e.g. 18, means to divide the token amount by 1000000000000000000 to get its user representation."
+    },
+    "description": {
+      "type": "string",
+      "description": "Describes the asset to which this token represents"
+    },
+    "image": {
+      "type": "string",
+      "description": "A URI pointing to a resource with mime type image/* representing the asset to which this token represents. Consider making any images at a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5 inclusive."
+    },
+    "properties": {
+      "type": "object",
+      "description": "Arbitrary properties. Values may be strings, numbers, object or arrays."
+    },
+    "array_property": {
+			"name": "Name",
+			"value": [1,2,3,4],
+			"class": "emphasis"
+		}
+  },
+  "attributes": [
+    {
+      "trait_type": "class",
+      "value": "genesis"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "birthday",
+      "value": 1624955102
+    },
+    {
+      "trait_type": "Base",
+      "value": "Starfish"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Big"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Surprised"
+    },
+    {
+      "trait_type": "Level",
+      "value": 5
+    },
+    {
+      "trait_type": "Stamina",
+      "value": 1.4
+    },
+    {
+      "trait_type": "Personality",
+      "value": "Sad"
+    },
+    {
+      "display_type": "boost_number",
+      "trait_type": "Aqua Power",
+      "value": 40
+    },
+    {
+      "display_type": "boost_percentage",
+      "trait_type": "Stamina Increase",
+      "value": 10
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Generation",
+      "value": 2
+    }
+  ]
+}

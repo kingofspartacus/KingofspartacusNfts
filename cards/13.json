@@ -1,0 +1,16 @@
+{
+  "name": "Lazy Ape Yacht Club LAYC is a hybrid collection of 10,000 unique NFT's living on the Ethereum Blockchain. Your Lazy Ape will grant you access to future benefits exclusively for members only.",
+  "description": "Genesis card",
+  "image_url": "https://github.com/kingofspartacus/KingofspartacusNfts/raw/master/cards/13.png",
+  "attributes": [
+      {
+        "trait_type": "class", 
+        "value": "genesis"
+      }, 
+      {
+          "display_type": "date", 
+          "trait_type": "birthday", 
+          "value": 1624955102
+      }        
+    ]
+}
