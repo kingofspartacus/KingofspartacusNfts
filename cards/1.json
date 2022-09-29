@@ -1,7 +1,7 @@
 {
-  "name": "Card 1",
+  "name": "YOLO Fantasy #1",
   "description": "Genesis card",
-  "image_url": "https://github.com/kingofspartacus/KingofspartacusNfts/raw/master/cards/1.jpg",
+  "image_url": "https://github.com/kingofspartacus/KingofspartacusNfts/raw/master/cards/1.png",
   "attributes": [
       {
         "trait_type": "class", 
