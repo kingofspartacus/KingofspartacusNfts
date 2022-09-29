@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "merge": "node node_modules/truffle-flattener ./contracts/ThanDevNFTs.sol > ThanDevNFTs-merge.sol",
-    "build-contracts": "sol-merger --remove-comments contracts/ThanDevNFTs.sol"
+    "merge": "node node_modules/truffle-flattener ./contracts/ThanNFTs.sol > ThanNFTs-merge.sol",
+    "build-contracts": "sol-merger --remove-comments contracts/ThanNFTs.sol"
   },
   "repository": {
     "type": "git",
